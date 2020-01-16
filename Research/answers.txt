@@ -1,0 +1,2 @@
+This is for popped image at index 0: [0.87641025, 0.82102567]
+This is for popped image at index 1: [0.85717946, 0.855641]
