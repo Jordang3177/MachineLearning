@@ -3,7 +3,7 @@
 # Importing the libraries
 
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -29,4 +29,18 @@ y_pred = regressor.predict(x_test)
 
 # Visualising the Training Set results
 
+plt.scatter(x_train, y_train, color='red')
+plt.plot(x_train, regressor.predict(x_train), color='blue')
+plt.title('Salary VS Experience (Training Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
 
+# Visualising the Test Set results
+
+plt.scatter(x_test, y_test, color='red')
+plt.plot(x_train, regressor.predict(x_train), color='blue')
+plt.title('Salary VS Experience (Test Set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
